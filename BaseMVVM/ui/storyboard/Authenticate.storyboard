@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="W9C-z9-X1b">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GGp-wa-qYG" customClass="LoginViewController" customModule="DrugStoreClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l9q-Gt-UkL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vEQ-X6-61t">
+                                <rect key="frame" x="147" y="194" width="120" height="120"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="2mK-Aj-raV"/>
+                                    <constraint firstAttribute="width" constant="120" id="S6H-W7-pCH"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Số điện thoại" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cr1-nC-LvA">
+                                <rect key="frame" x="16" y="364" width="382" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Qvc-NY-epJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oL-rA-9Wc">
+                                <rect key="frame" x="16" y="444" width="382" height="40"/>
+                                <color key="backgroundColor" red="0.87782377004623413" green="0.51966178417205811" blue="0.058918267488479614" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="XyA-sJ-gRY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Đăng nhập">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickLoginButton:" destination="GGp-wa-qYG" eventType="touchUpInside" id="iWz-kJ-nya"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7oL-rA-9Wc" firstAttribute="leading" secondItem="Vhd-nn-YdZ" secondAttribute="leading" constant="16" id="2z3-HM-nJN"/>
+                            <constraint firstItem="7oL-rA-9Wc" firstAttribute="top" secondItem="cr1-nC-LvA" secondAttribute="bottom" constant="40" id="3d2-Ya-ANy"/>
+                            <constraint firstItem="vEQ-X6-61t" firstAttribute="centerX" secondItem="l9q-Gt-UkL" secondAttribute="centerX" id="8i3-UK-eqa"/>
+                            <constraint firstItem="cr1-nC-LvA" firstAttribute="leading" secondItem="Vhd-nn-YdZ" secondAttribute="leading" constant="16" id="B3s-VG-vtU"/>
+                            <constraint firstItem="cr1-nC-LvA" firstAttribute="top" secondItem="vEQ-X6-61t" secondAttribute="bottom" constant="50" id="FdB-zO-FPN"/>
+                            <constraint firstItem="Vhd-nn-YdZ" firstAttribute="trailing" secondItem="7oL-rA-9Wc" secondAttribute="trailing" constant="16" id="O5B-HW-r8w"/>
+                            <constraint firstItem="Vhd-nn-YdZ" firstAttribute="trailing" secondItem="cr1-nC-LvA" secondAttribute="trailing" constant="16" id="tdE-kT-QHD"/>
+                            <constraint firstItem="vEQ-X6-61t" firstAttribute="top" secondItem="Vhd-nn-YdZ" secondAttribute="top" constant="150" id="xdk-pn-cYb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vhd-nn-YdZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="phoneTextField" destination="cr1-nC-LvA" id="oZ6-5U-Tcz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFb-8v-3Or" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="230" y="6"/>
+        </scene>
+    </scenes>
+</document>

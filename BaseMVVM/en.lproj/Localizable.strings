@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  BaseMVVM
+
+  Created by Nguyen on 10/29/19.
+  Copyright © 2019 Apple. All rights reserved.
+*/
+"kDefaultInternetError" = "Kết nối server xảy ra lỗi.";
+
+"messge_login_success" = "Đăng nhập thành công";
